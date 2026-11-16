@@ -20,3 +20,5 @@ For more information and releases, please visit the main repository: https://git
 
 Special thanks to all the developers involved in these projects.<br>
 Thank you to all the people who believe in this project.
+
+> 治理规范：[ReSerendipity/.github/governance](https://github.com/ReSerendipity/.github/tree/main/governance)

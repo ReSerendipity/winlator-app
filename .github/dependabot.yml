@@ -1,0 +1,25 @@
+version: 2
+# 依赖更新策略（家族口径：cooldown ≥7，github-actions 只支持 default-days）。
+updates:
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule: { interval: monthly }
+    cooldown: { default-days: 7 }
+    open-pull-requests-limit: 5
+    labels: [dependencies]
+    groups:
+      minor-and-patch:
+        applies-to: version-updates
+        update-types: [minor, patch]
+        patterns: ["*"]
+  - package-ecosystem: gradle
+    directory: "/"
+    schedule: { interval: monthly }
+    cooldown: { default-days: 7 }
+    open-pull-requests-limit: 5
+    labels: [dependencies]
+    groups:
+      minor-and-patch:
+        applies-to: version-updates
+        update-types: [minor, patch]
+        patterns: ["*"]
